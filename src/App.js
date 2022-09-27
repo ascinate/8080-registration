@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import react from "react";
+import ReactDOM, { render } from 'react-dom';
+import {BrowserRouter as Router , Routes, Route, Outlet,Switch, useLocation} from "react-router-dom";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/bootstrap/dist/js/bootstrap.bundle.js";
 import './App.css';
+import PreLogin from "./pages/register/PreLogin";
+import Footer from "../src/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Router>
+           
+             <Routes>
+               
+                  <Route excaexact="true" path="/" element={<PreLogin/>}/>
+                  
+                  
+                
+                  
+             </Routes>
+             <Footer/> 
+             
+        </Router>
     </div>
   );
 }

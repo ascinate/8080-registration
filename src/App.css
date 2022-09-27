@@ -1,38 +1,608 @@
-.App {
-  text-align: center;
+
+@charset "utf-8";
+/* CSS Document */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@font-face {
+  font-family: 'FuturaBoldfont';
+  src: url('./fonts/FuturaBoldfont.eot');
+  src: url('./fonts/FuturaBoldfont.eot') format('embedded-opentype'),
+       url('./fonts/FuturaBoldfont.woff2') format('woff2'),
+       url('./fonts/FuturaBoldfont.woff') format('woff'),
+       url('./fonts/FuturaBoldfont.ttf') format('truetype'),
+       url('./fonts/FuturaBoldfont.svg#FuturaBoldfont') format('svg');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'futuramediumbt';
+  src: url('./fonts/futuramediumbt.eot');
+  src: url('./fonts/futuramediumbt.eot') format('embedded-opentype'),
+       url('./fonts/futuramediumbt.woff2') format('woff2'),
+       url('./fonts/futuramediumbt.woff') format('woff'),
+       url('./fonts/futuramediumbt.ttf') format('truetype'),
+       url('./fonts/futuramediumbt.svg#futuramediumbt') format('svg');
+}
+a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, ul, var {
+border: 0;
+font-style: inherit;
+font-weight: inherit;
+margin: 0;
+outline: none !important;
+padding: 0;
+vertical-align: baseline;
+font-family: 'futuramediumbt';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+margin: 0;
+padding: 0;
+background: #000 url(../public/images/bg-background.png) no-repeat;
+background-size: cover;
+width: 100%;
+font-family: 'futuramediumbt';
+font-size:17px;
+color:#fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 20px 0;
+}
+a{
+	color:inherit;
+	outline: none !important;
+}
+a:hover{
+	color:inherit;
+	text-decoration:none;
+}
+button,
+button:focus{
+	outline: none !important;
+}
+ol {
+	padding-left: 0;
+}
+ol li {
+	list-style: inherit;
+}
+ul li {
+	list-style: none;
+}
+ul {
+	padding-left: 0;
+}
+li, ul {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+	max-width:100%;
+	border: none;
+	outline: none;
+}
+.btn:focus{
+  box-shadow: none !important;
+}
+
+
+
+.home-page{
+  margin-top: 80px;
+  display: inline-block;
+  width: 100%;
+}
+.comon-btn{
+  background: #ffa908;
+    background: linear-gradient(176deg,#ffa908,#7b0480);
+    border: none!important;
+    border-radius: 50px!important;
+    color: #fff!important;
+    margin-top: 18px;
+    padding: 8px 20px;
+    font-size: 20px !important;
+
+}
+.body-home1 h1{
+  font-family: 'FuturaBoldfont';
+  font-size: 64px;
+}
+.body-home1 h4{
+  font-size: 22px;
+}
+.home-page .comon-btn{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  width: 200px !important;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.home-page .comon-btn svg{
+  width: 40px;
+  height: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+.minright-div{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  padding:10px 20px;
+}
+.minright-div::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../public/images/bg-rigth-home.jpg) no-repeat;
+  background-size: cover;
+}
+.inside-rt{
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  width:100%;
+}
+.comon-gen-div{
+  display: inline-block;
+  position: relative;
+  width:100%;
+  border-bottom: solid 1px #fff;
+  padding: 10px 0 5px 0;
+}
+.comon-gen-link figcaption{
+  font-size: 15px !important;
+}
+.minright-div .inside-rt:last-child .comon-gen-div{
+  border-bottom: none !important;
+}
+.inside-rt h5{
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.comon-gen-div h3 span{
+  color: #E81F1F;
+  margin-right: 8px;
+}
+.comon-gen-link{
+  width: 229px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+.comon-gen-link figure{
+  display: flex;
+  align-items: center;
+}
+.verivay{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.verivay a{
+  text-decoration: none;
+  color: #FFA908;
+}
+.btn-aount1 {
+  background: #fff!important;
+  border-radius: 50px!important;
+  color: #000!important;
+  font-family: futuramediumbt;
+  padding: 5px 16px!important;
+  display: flex;
+  align-items: center;
+}
+.btn-aount1 .icon-name1 {
+  display: inline-block;
+  margin-right: 10px;
+  width: 44px;
+}
+.navbar{
+  margin-top: 15px;
+}
+.body-home1 .row > div.position-relative:first-child{
+  border-right: solid 1px #fff;
+}
+.btn-aount1 span {
+  font-family: FuturaBoldfont;
+  font-size: 20px;
+}
+.div-steps{
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  display: inline-block;
+  height: 15px;
+  width: 90%;
+  position: relative;
+
+}
+.sp-1{
+  background: #FF0200;
+  height: 15px;
+  display: inline-block;
+  width: 15%;
+  position: absolute;
+  border-radius: 20px;
+
+
+}
+.color-gray{
+  color: #707070 !important;
+}
+.red-color{
+  color: #FF0200;
+}
+.color-green{
+  color: #2AF2FF;
+  text-decoration: none;
+}
+.sp-9{
+  background: #FF0200;
+  height: 15px;
+  display: inline-block;
+  width: 90%;
+  position: absolute;
+  border-radius: 20px;
+
+}
+.body-total-suppy{
+  background: url(../public/images/bg-rigth-home.jpg) no-repeat;
+  background-size: cover;
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+}
+.body-total-products{
+  background: url(../public/images/bg-rigth-home.jpg) no-repeat;
+  background-size: cover;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 8px;
+}
+.body-total-products h2{
+  color: #2AF2FF;
+  font-family: 'FuturaBoldfont';
+  font-size: 45px;
+}
+.comon-items1{
+   display: grid;
+   align-content: center;
+   width: 90%;
+   background: rgba(255, 255, 255, 15%);
+   padding: 30px;
+   border-radius: 8px;
+   position: relative;
+   text-decoration: none;
+   height: 300px;
+   transition: all 0.5s;
+   margin: auto;
+}
+.body-total-products h1{
+  color: #FF0200;
+  font-family: 'FuturaBoldfont';
+  font-size: 60px;
+}
+.counting-ps-suppy button{
+   background:  #2AF2FF;
+   border-radius: 50%;
+   overflow: hidden;
+   display: grid;
+   border: none;
+   color: #fff !important;
+   width: 45px;
+   height: 45px;
+   align-content: center;
+   font-weight: bold;
+   font-size: 18px;
+}
+.counting-ps-suppy{
+  display: grid;
+  align-content: center;
+  width:100%;
+  background: rgba(255, 255, 255, 15%);
+  padding:20px;
+  border-radius: 8px;
+  position: relative;
+  text-decoration: none;
+  height: 300px;
+  transition: all 0.5s;
+  margin-top: 30px;
+}
+.counting-ps-suppy h1{
+  color: #fff !important;
+}
+.mint-btn{
+  background: rgb(42,242,255);
+  background: linear-gradient(115deg, rgba(42,242,255,1) 0%, rgba(255,2,0,1) 100%);
+border: none !important;
+border-radius: 20px !important;
+color: #fff !important;
+font-family: 'FuturaBoldfont';
+font-size: 20px !important;
+width: 60%;
+margin: auto;
+}
+.comon-items1:hover{
+  background: rgba(255, 255, 255, 25%);
+}
+.comon-items1 a{
+  display: inline-block;
+  width: 100%;
+}
+.comon-items1 h3{
+  color: #2AF2FF;
+  font-family: 'FuturaBoldfont';
+  font-size: 30px;
+}
+.comon-items1 h5{
+  font-size: 18px;
+  color: #707070;
+}
+.comon-items1 ul li{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.comon-items1 ul li span:last-child{
+  color: #2AF2FF;
+  font-size: 14px;
+}
+.suppy-hrad span{
+  color: #2AF2FF;
+}
+.renatin-hrad span{
+  color: #FF0200;
+}
+.body-div2-slide-suppy .slick-next,
+.body-div2-slide-suppy .slick-arrow{
+  display: none !important;
+}
+.goto-btn{
+  background: #FF0200 !important;
+  color: #fff !important;
+  border-radius: 30px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+.goto-btn svg{
+  width: 30px;
+  height: 30px;
+}
+footer {
+  background: #000;
+  display: inline-block;
+  width: 100%;
+}
+footer p {
+  font-size: 25px;
+}
+.top-inside-div{
+  background: url(../public/images/bg-rigth-home.jpg) no-repeat;
+  background-size: cover;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 41px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.comon-btn-ree{
+  background: rgb(42,242,255);
+  background: linear-gradient(115deg, rgba(42,242,255,1) 0%, rgba(255,2,0,1) 100%);
+  border: none !important;
+  border-radius: 20px !important;
+  color: #fff !important;
+  font-family: 'FuturaBoldfont';
+  font-size: 20px !important;
+  width: 35%;
+}
+.active-id-btn{
+  border: solid 2px #fff;
+  border-radius: 40px !important;
+  font-family: 'FuturaBoldfont';
+  font-size: 20px !important;
+  color: #fff !important;
+  display: none;
+}
+.top-sec-div-one{
+  background: url(../public/images/bg-rigth-home.jpg) no-repeat;
+  background-size: cover;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 0;
+}
+.comon-btn-socal{
+  background: rgb(255, 255, 255, 30%);
+  padding:8px 20px !important;
+  color: #fff !important;
+  border-radius: 50px !important;
+}
+.top-sec-div-one h2{
+  color: #FF0200;
+  font-family: 'FuturaBoldfont';
+  font-size: 45px; 
+}
+.comon-ge1-div{
+  background: url(../public/images/bg-rigth-home.jpg) no-repeat;
+  background-size: cover;
+  display: inline-block;
+  padding:30px;
+  border-radius: 8px;
+  width: 100%;
+  margin:30px 0;
+}
+.comon-ge1-div .comon-btn-ree{
+  width: 18%;
+}
+.comon-ge1-div h2{
+  color: #FF0200;
+  font-family: 'FuturaBoldfont';
+  font-size: 45px; 
+}
+.comon-ge1-div h1{
+  color: #fff;
+  font-family: 'FuturaBoldfont';
+  font-size: 45px; 
+}
+.ft-new{
+  background: none !important;
+}
+.comon-pre-bn{
+  background: url(../public/images/bg-rigth-home.jpg) no-repeat;
+  background-size: cover;
+  display: grid;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  height: 100px;
+  align-content: center;
+}
+.comon-sc-f .comon-btn-ree{
+  width: 45%;
+}
+.comon-sc-f svg{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    margin-right: 10px;
+}
+.comon-sc-v .clos svg{
+  width: 30px;
+  height: 30px;
+  color: #fff !important;
+
+}
+.comon-sc-v b{
+  color: #6D82CB;
+}
+.iconm1 svg{
+  width: 25px;
+  height: 25px;
+}
+.discord-div2{
+  display: none;
+}
+.twi-div{
+  display: none;
+}
+.show-connntect-cord1 .discord-div2{
+  display: block;
+}
+.show-connntect-cord1 .discord-div{
+  display: none;
+}
+ 
+.show-connntect-twit1 .twi-div{
+  display: block;
+}
+.show-connntect-twit1 .twitw-div1{
+  display: none;
+}
+.socal-contect-div{
+  display: none;
+}
+.new-show-socal-div .socal-contect-div{
+  display: block;
+}
+.new-show-socal-div .funt-btn{
+  display: none;
+}
+.new-show-socal-div .active-id-btn{
+  display:block;
+}
+.icon-n3{
+  width: 20px;
+  height: 20px;
+  color:#46BA4F;
+}
+.icon-n3 svg{
+  width: 10px;
+  height: 10px;
+}
+.sc-mn-icon svg{
+    width: 40px;
+    height: 40px;
+}
+.iconm1 svg{
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 900px) {
+  .verivay{
+    position: relative;
+    margin-top: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .body-home1 .row > div.position-relative:first-child{
+    border-right: none;
   }
+  .navbar-toggler{
+    display: none;
+  }
+  .right-mnain-menu1{
+    display: table;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .comon-items1{
+    height: 350px;
+    padding: 18px;
+  }
+  .comon-items1 ul li{
+    font-size: 13px;
+  }
+  .goto-btn{
+    width: 100%;
+  }
+  .comon-items1 ul li{
+    font-size: 13px;
+  }
+  .comon-items1 ul li span:last-child{
+    font-size: 11px;
+  }
+  .div-steps{
+    width: 76%;
+  }
+
+}
+@media screen and (max-width: 667px) {
+  .verivay{
+    position: relative;
+    margin-top: 10px;
+  }
+  .body-home1 .row > div.position-relative:first-child{
+    border-right: none;
+  }
+  .comon-items1{
+    height: 350px;
+    padding: 18px;
+  }
+  .comon-items1 ul li{
+    font-size: 13px;
+  }
+  .div-steps{
+    width: 76%;
+  }
+  .comon-items1 ul li span:last-child{
+    font-size: 12px;
+  }
+  .goto-btn{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
 }
