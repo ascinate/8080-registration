@@ -18,20 +18,6 @@ const Alldatapre =[
         
     },
 
-    {
-        id:3,
-        titel:"Gen 3",
-        register:"666",
-        allowed:"666",
-        winners:"22",
-        
-    },
-
-
-
-    
-
-    
 
 
 ]

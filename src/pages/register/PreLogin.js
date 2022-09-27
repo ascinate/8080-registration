@@ -29,7 +29,7 @@ function PreLogin(){
         <>
         <div id="main-total" className={isActive ? "show-main-up-allowlist" : null}>
             <Header/>
-            <section className="home-page comon-page float-start w-100 mt-4">
+            <section className="home-page comon-page float-start w-100 sp-margin">
                   <div className="container">
                       
                       <div className="top-sec-div-one">

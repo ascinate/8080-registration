@@ -32,16 +32,16 @@ margin: 0;
 outline: none !important;
 padding: 0;
 vertical-align: baseline;
-font-family: 'futuramediumbt';
+font-family: 'Source Sans Pro', sans-serif;
 }
 
 body {
 margin: 0;
 padding: 0;
-background: #000 url(../public/images/bg-background.png) no-repeat;
+background: #000 url(../public/images/bg-new.png) no-repeat;
 background-size: cover;
 width: 100%;
-font-family: 'futuramediumbt';
+font-family: 'Source Sans Pro', sans-serif;
 font-size:17px;
 color:#fff;
 }
@@ -393,7 +393,10 @@ footer p {
   padding: 20px;
   border-radius: 8px;
   width: 100%;
-  margin-top: 41px;
+  margin-top: 25px;
+}
+.sp-margin{
+  margin-top:25px;
 }
 
 .comon-btn-ree{
@@ -402,17 +405,19 @@ footer p {
   border: none !important;
   border-radius: 20px !important;
   color: #fff !important;
-  font-family: 'FuturaBoldfont';
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px !important;
+  font-weight: 700;
   width: 35%;
 }
 .active-id-btn{
   border: solid 2px #fff;
   border-radius: 40px !important;
-  font-family: 'FuturaBoldfont';
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px !important;
   color: #fff !important;
   display: none;
+  font-weight: 700;
 }
 .top-sec-div-one{
   background: url(../public/images/bg-rigth-home.jpg) no-repeat;
@@ -422,6 +427,7 @@ footer p {
   border-radius: 8px;
   width: 100%;
   margin-top: 0;
+  margin-bottom: 25px;
 }
 .comon-btn-socal{
   background: rgb(255, 255, 255, 30%);
@@ -431,8 +437,8 @@ footer p {
 }
 .top-sec-div-one h2{
   color: #FF0200;
-  font-family: 'FuturaBoldfont';
-  font-size: 45px; 
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px; 
 }
 .comon-ge1-div{
   background: url(../public/images/bg-rigth-home.jpg) no-repeat;
@@ -441,20 +447,30 @@ footer p {
   padding:30px;
   border-radius: 8px;
   width: 100%;
-  margin:30px 0;
+  margin-bottom:25px;
+}
+.ft-new h3,
+.ft-new p{
+  font-weight: 700;
 }
 .comon-ge1-div .comon-btn-ree{
   width: 18%;
 }
 .comon-ge1-div h2{
   color: #FF0200;
-  font-family: 'FuturaBoldfont';
-  font-size: 45px; 
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 50px; 
+  font-weight: 700;
 }
 .comon-ge1-div h1{
   color: #fff;
-  font-family: 'FuturaBoldfont';
-  font-size: 45px; 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 75px;
+    font-weight: 700;
+}
+.crytaria-div li {
+  margin-bottom: 6px;
+  font-size: 20px;
 }
 .ft-new{
   background: none !important;
