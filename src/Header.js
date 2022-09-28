@@ -14,7 +14,7 @@ function Header(){
 
     return(
         <>
-          <section className="top-sec-bar comon-page float-start w-100">
+          <section className="top-sec-bar navbar-fixed-top comon-page float-start w-100">
               <div className="container">
                  <div className="top-inside-div">
                      <div className="row row-cols-1 row-cols-lg-2 align-items-center">

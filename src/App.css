@@ -491,6 +491,8 @@ footer p {
   width: 30px;
   height: 30px;
 }
+
+
 .comon-ge1-div h2{
   color: #FF0200;
   font-family: 'Source Sans Pro', sans-serif;
@@ -660,4 +662,12 @@ footer p {
 }
 
 @media screen and (max-width: 375px) {
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+}
+.show-main-up-allowlist{
+  padding-top: 133px;
 }
