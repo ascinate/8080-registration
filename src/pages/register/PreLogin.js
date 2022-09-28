@@ -25,6 +25,13 @@ function PreLogin(){
         document.querySelector("#main-total").classList.add('new-show-socal-div');
     }
 
+   
+    const onCkickHandelNew=(event)=> {
+        event.target.classList.toggleShow('show-event');
+    }
+
+    
+
     return(
         <>
         <div id="main-total" className={isActive ? "show-main-up-allowlist" : null}>
@@ -61,14 +68,14 @@ function PreLogin(){
                       </div>
                       
 
-                    <div id="gen-div" className="gen-list-div">
+                    <div id="gen-div" className="gen-list-div" >
                       {
                         prelogData.map((curElem) =>{
-                            const { id, titel, register, colsetext,   registerbtn, nouncheck, notvaricheck, allowed, winners, firstpara, fist1, last1  } = curElem;
+                            const { id, titel, register, colsetext,   registerbtn, nouncheck, tagevent, notvaricheck, allowed, winners, firstpara, fist1, last1  } = curElem;
                             return(
                                 <>
                                
-                                <div  className="comon-ge1-div">
+                                <a className="comon-ge1-div" onClick={onCkickHandelNew}>
                                      <h2 className="mt-0"> {titel} </h2>
                                         <div className="col-lg-11 mx-auto mb-5">
                                             <div className="row main-row row-cols-1 row-cols-lg-3 g-lg-4 align-items-end">
@@ -137,7 +144,12 @@ function PreLogin(){
                                                     </div>
                                             </div>
                                         </div>
-                                        <div id="close" className="text-center close-text"> <p> {colsetext} </p></div>
+                                        <div id="close" className="text-center close-text">
+                                           <p> {colsetext} </p>
+                                           <p> {tagevent} </p>
+                                          
+                                        </div>
+                                        
                                         <div className="d-flex justify-content-lg-end align-items-center">
                                                 <button type="button" className="btn comon-btn-ree funt-btn"  onClick={onCkickHandel}>
                                                     Connect Wallet <BsArrowRight/>
@@ -147,7 +159,7 @@ function PreLogin(){
                                                 {registerbtn}
                                                </div>
                                         </div>
-                                </div>
+                                </a>
                                 </>
                             );
                         })

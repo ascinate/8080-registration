@@ -13,7 +13,9 @@ const Alldatapre =[
       nouncheck:"images/vari-checkbox-1043037.png",
       notvaricheck:"",
       registerbtn:"",
-      colsetext:"Registration closed."
+      tagevent:"Registered for roffle on 22nd on July, 2022. Awaiting result.",
+      colsetext:"Registration closed.",
+      
     },
 
     {
@@ -28,7 +30,9 @@ const Alldatapre =[
         nouncheck:"images/vari-checkbox-1043037.png",
         notvaricheck:"images/Path-3490.png",
         registerbtn:<ButtonRegister/>,
+        tagevent:"",
         colsetext:"",
+        
         
     },
 
