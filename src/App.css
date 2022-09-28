@@ -24,6 +24,39 @@
        url('./fonts/futuramediumbt.ttf') format('truetype'),
        url('./fonts/futuramediumbt.svg#futuramediumbt') format('svg');
 }
+
+@font-face {
+  font-family: 'PuntaExtrabold';
+  src: url('./fonts/PuntaExtrabold.eot');
+  src: url('./fonts/PuntaExtrabold.eot') format('embedded-opentype'),
+       url('./fonts/PuntaExtrabold.woff2') format('woff2'),
+       url('./fonts/PuntaExtrabold.woff') format('woff'),
+       url('./fonts/PuntaExtrabold.ttf') format('truetype'),
+       url('./fonts/PuntaExtrabold.svg#PuntaExtrabold') format('svg');
+}
+
+@font-face {
+  font-family: 'FuturaMedium';
+  src: url('./fonts/FuturaMedium.eot');
+  src: url('./fonts/FuturaMedium.eot') format('embedded-opentype'),
+       url('./fonts/FuturaMedium.woff2') format('woff2'),
+       url('./fonts/FuturaMedium.woff') format('woff'),
+       url('./fonts/FuturaMedium.ttf') format('truetype'),
+       url('./fonts/FuturaMedium.svg#FuturaMedium') format('svg');
+}
+
+@font-face {
+  font-family: 'FuturaBold';
+  src: url('./fonts/FuturaBold.eot');
+  src: url('./fonts/FuturaBold.eot') format('embedded-opentype'),
+       url('./fonts/FuturaBold.woff2') format('woff2'),
+       url('./fonts/FuturaBold.woff') format('woff'),
+       url('./fonts/FuturaBold.ttf') format('truetype'),
+       url('./fonts/FuturaBold.svg#FuturaBold') format('svg');
+}
+
+
+
 a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, ul, var {
 border: 0;
 font-style: inherit;
@@ -460,26 +493,33 @@ footer p {
   margin-right: 7px;
 }
 .top-sec-div-one h2{
-  color: #FF0200;
-  font-family: 'Source Sans Pro', sans-serif;
+  color: #EE4130;
+  font-family: 'PuntaExtrabold';
   font-size:64px; 
   margin: 0;
+  text-shadow: 0px 3px 6px #00000029;
+  letter-spacing: 0px;
 }
 .top-sec-div-one p{
-  font-size: 23px;
+  font-size: 24px;
   margin-top: 15px;
+  font-family: 'FuturaMedium';
+  text-shadow: 0px 3px 6px #00000029;
+  letter-spacing: 0px;
+  line-height: 30px;
 }
 .comon-ge1-div{
   background: url(../public/images/bg-rigth-home.jpg) no-repeat;
   background-size: cover;
   display: grid;
   align-content: center;
-  padding:0 50px;
+  padding:0 44px;
   border-radius: 8px;
   width: 100%;
   margin-bottom:25px;
-  height: 600px;
+  height: 560px;
 }
+
 .ft-new h3,
 .ft-new p{
   font-weight: 700;
@@ -494,27 +534,45 @@ footer p {
 
 
 .comon-ge1-div h2{
-  color: #FF0200;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 50px; 
-  font-weight: 700;
+  color: #F33E31;
+  font-family: 'FuturaBold';
+  font-size: 52px; 
+  text-shadow: 0px 3px 6px #00000029;
 }
 .comon-ge1-div h1{
   color: #fff;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 75px;
+  font-family: 'FuturaBold';
+    font-size: 120px;
     margin: 0;
-    font-weight: 700;
+    text-shadow: 0px 3px 6px #00000029;
+}
+.crytaria-div h2{
+  font-size: 42px;
+  text-shadow: 0px 3px 6px #00000029;
+}
+.comon-ge1-div .row > div:last-child h1{
+  font-size: 89px;
 }
 .comon-ge1-div h5{
   margin: 0;
+  font-family: 'FuturaMedium';
+  font-size: 26px;
+  line-height: 30px;
 }
 .crytaria-div li {
   margin-bottom: 6px;
-  font-size: 20px;
+  font-size: 22px;
+  font-family: 'FuturaMedium';
+  line-height: 28px;
+}
+.crytaria-div li b{
+  font-family: 'FuturaBold';
 }
 .ft-new{
   background: none !important;
+}
+.inside-cosl{
+  margin-bottom: 25px;
 }
 .comon-pre-bn{
   background: url(../public/images/bg-rigth-home.jpg) no-repeat;
@@ -596,6 +654,82 @@ footer p {
   width: 40px;
   height: 40px;
 }
+
+.new-show-socal-div .gen-list-div > div:first-child .main-row > div:last-child .rafel-text{
+  display: none;
+}
+.new-show-socal-div .gen-list-div > div:last-child .main-row > div:last-child .first-cum-st1{
+  display: none;
+}
+.first-cum-st1{
+  display: none;
+}
+.new-show-socal-div .first-cum-st1{
+  display: block;
+}
+.first-cum-st1 h1{
+  font-size: 47px !important;
+}
+
+.check-or-uncheck{
+  display: none;
+  margin-right: 8px;
+}
+.check-or-uncheck img{
+  width: 20px;
+  vertical-align: middle;
+}
+
+.register-btn{
+  background: rgb(42,242,255);
+  background: linear-gradient(115deg, rgba(42,242,255,1) 0%, rgba(255,2,0,1) 100%);
+  border: none !important;
+  border-radius: 20px !important;
+  color: #fff !important;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 20px !important;
+  font-weight: 700;
+  line-height:40px !important;
+  text-transform: capitalize;
+}
+.close-text{
+  font-family: 'FuturaMedium';
+  font-size: 26px;
+  line-height: 30px;
+}
+.close-text{
+  display: none;
+}
+.register-show .close-text{
+  display: block;
+}
+.register-show .check-or-uncheck,
+.register-show .check-or-uncheck{
+  display: inline-block !important;
+  height: 31px;
+}
+.register-btn2{
+  width: 16% !important;
+}
+.registe-btn-div{
+  display: none;
+}
+
+.register-show .registe-btn-div{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.register-btn2.disabled, .register-btn2:disabled, 
+fieldset:disabled .register-btn2{
+  background: rgb(255,255,255);
+  background: linear-gradient(115deg, rgba(255,255,255,1) 0%, rgba(112,112,112,1) 100%);
+  opacity: 9 !important;
+}
+.close1{
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   .verivay{
     position: relative;

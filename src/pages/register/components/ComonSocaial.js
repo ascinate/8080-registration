@@ -8,6 +8,7 @@ function ComonSocaial(){
 
     const onShowC = (e) => {
         navRefnext.current.classList.add("show-connntect-cord1");
+        document.querySelector("#gen-div").classList.add('register-show');
     };
 
     const onShowC2 = (e) => {
@@ -16,12 +17,14 @@ function ComonSocaial(){
 
     const onShowT = (e) => {
         navRefnextT.current.classList.add("show-connntect-twit1");
+        document.querySelector("#gen-div").classList.add('register-show');
     };
 
     const onShowT2 = (e) => {
         navRefnextT.current.classList.remove("show-connntect-twit1");
     };
 
+   
 
     
     return(
