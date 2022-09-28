@@ -567,9 +567,19 @@ footer p {
   font-family: 'FuturaMedium';
   line-height: 28px;
 }
+
 .crytaria-div li b{
   font-family: 'FuturaBold';
 }
+.crytaria-div li .btn{
+  margin-bottom: 6px;
+  font-size: 22px;
+  font-family: 'FuturaMedium';
+  line-height: 28px;
+  color: #fff;
+  padding: 0 !important;
+}
+
 .ft-new{
   background: none !important;
 }
@@ -663,6 +673,9 @@ footer p {
 .new-show-socal-div .gen-list-div > a:last-child .main-row > div:last-child .first-cum-st1{
   display: none;
 }
+.new-show-socal-div .gen-list-div > a:first-child .register-btn2{
+  display: none;
+}
 .first-cum-st1{
   display: none;
 }
@@ -737,6 +750,26 @@ fieldset:disabled .register-btn2{
 }
 .register-show > a:last-child .vari{
   display: none;
+}
+.own-div-show > a:last-child .close1{
+  display: none !important;
+}
+.own-div-show > a:last-child .vari{
+  display: inline-block !important;
+}
+.Toastify__toast-container{
+  left: 0 !important;
+  margin: auto !important;
+  right: 0 !important;
+}
+
+.Toastify__toast-theme--light{
+  background: #8EC484 !important;
+  color: #fff !important;
+}
+.Toastify__close-button--light{
+  color: #fff !important;
+  opacity: 9 !important;
 }
 
 @media screen and (max-width: 900px) {

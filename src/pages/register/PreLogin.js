@@ -5,6 +5,9 @@ import { FaTwitter, FaGlobe } from "react-icons/fa";
 import Alldatapre from "./components/PreLoginApi";
 import ComonSocaial from "./components/ComonSocaial";
 import Header from "../../Header";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import EventValue from "./components/EventValue";
 
 
 
@@ -20,7 +23,7 @@ function PreLogin(){
         setActive(!isActive);
       };
 
-
+   
     const onCkickHandel=()=>{
         document.querySelector("#main-total").classList.add('new-show-socal-div');
     }
@@ -30,6 +33,19 @@ function PreLogin(){
         event.target.classList.toggleShow('show-event');
     }
 
+
+    const handleToggleRegister = () => {
+        setActiveDiv(!isActivediv);
+        setDisabled(!disabled);
+        document.querySelector("#gen-div").classList.add('own-div-show');
+        
+    };
+
+    const [disabled, setDisabled] = useState("false");
+    
+    const [isActivediv, setActiveDiv] = useState("false");
+
+    const notify = () => toast("Register Successfully");
     
 
     return(
@@ -75,7 +91,7 @@ function PreLogin(){
                             return(
                                 <>
                                
-                                <a className="comon-ge1-div" onClick={onCkickHandelNew}>
+                                <a className="comon-ge1-div" >
                                      <h2 className="mt-0"> {titel} </h2>
                                         <div className="col-lg-11 mx-auto mb-5">
                                             <div className="row main-row row-cols-1 row-cols-lg-3 g-lg-4 align-items-end">
@@ -129,6 +145,7 @@ function PreLogin(){
                                                                    </span> 
                                                                 </li>
                                                                 <li> 
+                                                                 <button className="btn" onClick={handleToggleRegister}>
                                                                  <span className="check-or-uncheck">
                                                                     <img src={nouncheck} alt="nont" className="vari"/>
                                                                     <img src="images/path-cls.png" alt="nont" className="close1"/>
@@ -137,6 +154,7 @@ function PreLogin(){
                                                                   <span> 
                                                                   Must have <b> @everyone </b> role in discord
                                                                   </span> 
+                                                                   </button>
                                                                   </li>
                                                                 </ul>
                                                             </div>
@@ -146,18 +164,19 @@ function PreLogin(){
                                         </div>
                                         <div id="close" className="text-center close-text">
                                            <p> {colsetext} </p>
-                                           <p> {tagevent} </p>
+                                           <EventValue/>
                                           
                                         </div>
-                                        
+                                        <ToastContainer />
                                         <div className="d-flex justify-content-lg-end align-items-center">
                                                 <button type="button" className="btn comon-btn-ree funt-btn"  onClick={onCkickHandel}>
                                                     Connect Wallet <BsArrowRight/>
                                                 </button>
 
-                                               <div className="registe-btn-div">
-                                                {registerbtn}
-                                               </div>
+
+                                                <button type="button" className="btn comon-btn-ree register-btn2" onClick={notify}  disabled={disabled}> Register <BsArrowRight/> </button>
+
+                                              
                                         </div>
                                 </a>
                                 </>
