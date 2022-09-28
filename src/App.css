@@ -673,8 +673,11 @@ footer p {
 .new-show-socal-div .gen-list-div > a:last-child .main-row > div:last-child .first-cum-st1{
   display: none;
 }
-.show-main-up-allowlist .gen-list-div > a:first-child .register-btn2{
+.register-btn2{
   display: none;
+}
+.new-show-socal-div .register-show > a:last-child .register-btn2{
+  display: block;
 }
 .first-cum-st1{
   display: none;
