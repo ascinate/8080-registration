@@ -33,7 +33,7 @@ function PreLogin(){
                   <div className="container">
                       
                       <div className="top-sec-div-one">
-                         <div className="row">
+                         <div className="row align-items-center">
                             <div className="col-lg-4">
                                <figure className="mb-0">
                                   <img src="images/pg.jpg" alt="leftpic"/>
@@ -41,9 +41,10 @@ function PreLogin(){
                             </div>
                             <div className="col-lg-8">
                                <h2 className="mt-0"> Project Godjira </h2>
-                               <p className="mb-5 col-lg-9"> A collection of 333 unique genesis Godjiras and 
+                               <p className="mb-5 col-lg-11"> A collection of 333 unique genesis Godjiras
+                                and <span className="d-block">
                                3333 gen2 Godjiras on the Ethereum blockchain 
-                               living as NFTs. </p>
+                               living as NFTs. </span> </p>
                                <NavLink to="/" className="btn comon-btn-socal">
                                    <FaTwitter/> @PGodjira
                                </NavLink>
@@ -86,7 +87,7 @@ function PreLogin(){
                                                 </div>
                                             </div>
 
-                                            <div className="cty-div mt-4">
+                                            <div className="cty-div mt-5">
                                                     <div className="crytaria-div">
                                                         <div className="row row-cols-1 row-cols-lg-2 align-items-center">
                                                             <div className="col">
