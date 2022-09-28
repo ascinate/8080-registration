@@ -1,8 +1,16 @@
-import React, {useRef, useState} from "react";
+import React, {useRef, useState, useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import { BsArrowRight, BsFillCircleFill  } from "react-icons/bs";
 
 function Header(){
+
+    const [scroll, setScroll] = useState(false);
+    useEffect(() => {
+      window.addEventListener("scroll", () => {
+        setScroll(window.scrollY > 50);
+      });
+    }, []);
+    
     const [isActive, setActive] = useState("false");
     const handleclick = () => {
         setActive(!isActive);
@@ -14,16 +22,17 @@ function Header(){
 
     return(
         <>
-          <section className="top-sec-bar navbar-fixed-top comon-page float-start w-100">
+        <section className={scroll ? "full-with" : "fixed-with"}>
+          <div className="top-sec-bar navbar-fixed-top comon-page float-start w-100">
               <div className="container">
                  <div className="top-inside-div">
-                     <div className="row row-cols-1 row-cols-lg-2 align-items-center">
+                     <div className="row row-cols-2 row-cols-lg-2 align-items-center">
                          <div className="col">
                             <NavLink to="/">
                                 <img src="images/logo.png" alt="logo"/>
                             </NavLink>
                          </div>
-                         <div className="col d-lg-flex justify-content-lg-end">
+                         <div className="col d-flex justify-content-end">
                             <button type="button" className="btn comon-btn-ree funt-btn" onClick={addclass}>
                                   Connect Wallet <BsArrowRight/>
                              </button>
@@ -36,7 +45,8 @@ function Header(){
                      </div>
                  </div>
               </div>
-          </section>
+          </div>
+        </section>
         </>
     )
 };

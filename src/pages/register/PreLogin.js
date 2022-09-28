@@ -11,6 +11,7 @@ import EventValue from "./components/EventValue";
 
 
 
+
 function PreLogin(){
     document.title ="8080 Godjira - Pre Login"
     const [show, toggleShow] = useState(false);
@@ -163,8 +164,7 @@ function PreLogin(){
                                             </div>
                                         </div>
                                         <div id="close" className="text-center close-text">
-                                           <p> {colsetext} </p>
-                                           <EventValue/>
+                                           {colsetext}
                                           
                                         </div>
                                         <ToastContainer />

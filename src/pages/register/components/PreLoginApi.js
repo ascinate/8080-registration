@@ -1,4 +1,6 @@
+import EventValue from "./EventValue";
 import ButtonRegister from "./ButtonRegister";
+
 const Alldatapre =[
 
     {
@@ -14,7 +16,7 @@ const Alldatapre =[
       notvaricheck:"",
       registerbtn:"",
       tagevent:"Registered for roffle on 22nd on July, 2022. Awaiting result.",
-      colsetext:"Registration closed.",
+      colsetext:<EventValue/>,
       
     },
 
