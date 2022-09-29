@@ -75,6 +75,25 @@
        url('./fonts/futuramediumitalic.svg#futuramediumitalic') format('svg');
 }
 
+@font-face {
+  font-family: 'PuntaRegular';
+  src: url('./fonts/PuntaRegular.eot');
+  src: url('./fonts/PuntaRegular.eot') format('embedded-opentype'),
+       url('./fonts/PuntaRegular.woff2') format('woff2'),
+       url('./fonts/PuntaRegular.woff') format('woff'),
+       url('./fonts/PuntaRegular.ttf') format('truetype'),
+       url('./fonts/PuntaRegular.svg#PuntaRegular') format('svg');
+}
+
+@font-face {
+  font-family: 'LEMONMILKRegular';
+  src: url('./fonts/LEMONMILKRegular.eot');
+  src: url('./fonts/LEMONMILKRegular.eot') format('embedded-opentype'),
+       url('./fonts/LEMONMILKRegular.woff2') format('woff2'),
+       url('./fonts/LEMONMILKRegular.woff') format('woff'),
+       url('./fonts/LEMONMILKRegular.ttf') format('truetype'),
+       url('./fonts/LEMONMILKRegular.svg#LEMONMILKRegular') format('svg');
+}
 
 
 a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, ul, var {
@@ -665,10 +684,14 @@ backdrop-filter: blur(30px);
 .crytaria-div li {
   margin-bottom: 0px;
   font-size: 18px;
-  font-family: 'FuturaMedium';
+  font-family: 'LEMONMILKRegular';
+}
+.crytaria-div li span{
+  font-family:'FuturaMedium';
+
 }
 
-.crytaria-div li b{
+.crytaria-div li span b{
   font-family: 'FuturaBold';
 }
 .crytaria-div li .btn{
@@ -932,7 +955,9 @@ fieldset:disabled .register-btn2{
 .retex  svg{
   margin-left: 5px;
 }
-
+.recive-text1{
+  font-size: 17px;
+}
 
 @media screen and (min-width:1200px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl{

@@ -11,7 +11,7 @@ function Footer(){
                      <NavLink to="/" className="footer-lg">
                          <img src="images/8080logo3.png" alt="footer logo"/>
                      </NavLink>
-                     <p className="text-white mb-0"> All Rights Reserved</p>
+                     <p className="text-white mb-0 recive-text1"> All Rights Reserved</p>
                 </div>
             </div>
          </footer>
