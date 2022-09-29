@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import { BsArrowRight, BsXLg ,BsX } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
-import { FaTwitter, FaGlobe } from "react-icons/fa";
+import { FaTwitter, FaGlobe, FaUndo } from "react-icons/fa";
 import Alldatapre from "./components/PreLoginApi";
 import ComonSocaial from "./components/ComonSocaial";
 import Header from "../../Header";
@@ -46,7 +46,12 @@ function PreLogin(){
     
     const [isActivediv, setActiveDiv] = useState("false");
 
-    const notify = () => toast("Register Successfully");
+    const notify = () => {toast("Register Successfully");
+       setShowResults(true);
+     }
+
+    const [showResults, setShowResults] = useState(false)
+
     
 
     return(
@@ -57,6 +62,7 @@ function PreLogin(){
                   <div className="container">
                       
                       <div className="top-sec-div-one">
+                      
                          <div className="row align-items-center">
                             <div className="col-lg-4">
                                <figure className="mb-0">
@@ -65,7 +71,7 @@ function PreLogin(){
                             </div>
                             <div className="col-lg-8 ps-lg-0">
                                <h2 className="mt-0"> Project Godjira </h2>
-                               <p className="mb-5 col-lg-11"> A collection of 333 unique genesis Godjiras
+                               <p className="col-lg-9"> A collection of 333 unique genesis Godjiras
                                 and <span className="d-block">
                                3333 gen2 Godjiras on the Ethereum blockchain 
                                living as NFTs. </span> </p>
@@ -77,6 +83,8 @@ function PreLogin(){
                                </NavLink>
                             </div>
                          </div>
+                      
+
                       </div>
 
 
@@ -88,7 +96,7 @@ function PreLogin(){
                     <div id="gen-div" className="gen-list-div" >
                       {
                         prelogData.map((curElem) =>{
-                            const { id, titel, register, colsetext,   registerbtn, nouncheck, tagevent, notvaricheck, allowed, winners, firstpara, fist1, last1  } = curElem;
+                            const { id, titel, register, colsetext,   registerbtn, registerstatus, nouncheck, tagevent, notvaricheck, allowed, winners, firstpara, fist1, last1  } = curElem;
                             return(
                                 <>
                                
@@ -124,7 +132,7 @@ function PreLogin(){
                                                     <div className="crytaria-div">
                                                         <div className="row row-cols-1 row-cols-lg-2 align-items-center">
                                                             <div className="col">
-                                                                <h2 className="m-0 text-white ms-lg-5">Qualification <br/> 
+                                                                <h2 className="m-0 text-white ms-lg-4">Qualification <br/> 
                                                                 Criteria </h2> 
                                                             </div>
                                                             <div className="col">
@@ -167,14 +175,18 @@ function PreLogin(){
                                            {colsetext}
                                           
                                         </div>
+                                        { showResults ? <p className="text-center retex m-0"> Registered for raffle on 22nd of July, 2022. Awaiting result. <FaUndo/> </p> : null }
                                         <ToastContainer />
                                         <div className="d-flex justify-content-lg-end align-items-center">
                                                 <button type="button" className="btn comon-btn-ree funt-btn"  onClick={onCkickHandel}>
-                                                    Connect Wallet <BsArrowRight/>
+                                                    Connect Wallet <span className="btn-arowwn"> <img src="images/arrow.png" alt="bn"/> </span>
                                                 </button>
 
-
-                                                <button type="button" className="btn comon-btn-ree register-btn2" onClick={notify}  disabled={disabled}> Register <BsArrowRight/> </button>
+                                            { !showResults ?
+                                                <button type="button" className="btn comon-btn-ree register-btn2" onClick={notify}  disabled={disabled}> Register <span className="btn-arowwn"> <img src="images/arrow.png" alt="bn"/> </span>
+                                                 </button>
+                                                 : null
+                                            }
 
                                               
                                         </div>

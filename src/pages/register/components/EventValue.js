@@ -18,7 +18,6 @@ const EventValue = () => {
         );
       }
 
-  
   };
 
 export default EventValue;

@@ -55,6 +55,16 @@
        url('./fonts/FuturaBold.svg#FuturaBold') format('svg');
 }
 
+@font-face {
+  font-family: 'AvenirBlack';
+  src: url('./fonts/AvenirBlack.eot');
+  src: url('./fonts/AvenirBlack.eot') format('embedded-opentype'),
+       url('./fonts/AvenirBlack.woff2') format('woff2'),
+       url('./fonts/AvenirBlack.woff') format('woff'),
+       url('./fonts/AvenirBlack.ttf') format('truetype'),
+       url('./fonts/AvenirBlack.svg#AvenirBlack') format('svg');
+}
+
 
 
 a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, ul, var {
@@ -71,8 +81,12 @@ font-family: 'Source Sans Pro', sans-serif;
 body {
 margin: 0;
 padding: 0;
-background: #000 url(../public/images/bg-new.png) no-repeat;
-background-size: cover;
+background: #000;
+background-image:url(../public/images/bg-section.jpg) ;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: 145%;
+background-position: center bottom;
 width: 100%;
 font-family: 'Source Sans Pro', sans-serif;
 font-size:17px;
@@ -420,15 +434,15 @@ footer p {
   font-size: 25px;
 }
 .top-inside-div{
-  background: url(../public/images/bg-rigth-home.jpg) no-repeat;
   background-size: cover;
   display: grid;
   padding: 0 40px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%;
   margin-top: 25px;
-  height: 107px;
+  height: 90px;
   align-content: center;
+  position: relative;
 }
 .sp-margin{
   margin-top:25px;
@@ -440,38 +454,100 @@ footer p {
   border: none !important;
   border-radius: 20px !important;
   color: #fff !important;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px !important;
-  font-weight: 700;
+  font-family: 'AvenirBlack';
+  font-size: 16px !important;
   width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .active-id-btn{
   border: solid 2px #fff;
   border-radius: 40px !important;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 20px !important;
+  font-family: 'AvenirBlack';
+  font-size: 16px !important;
   color: #fff !important;
   display: none;
-  font-weight: 700;
+  padding: 3px 13px;
+
+}
+.btn-arowwn img{
+  width: 23px;
+  vertical-align: middle;
+  margin-left: 5px;
+  position: relative;
+  top: -3px;
 }
 .top-sec-div-one{
-  background: url(../public/images/bg-rigth-home.jpg) no-repeat;
   background-size: cover;
-  padding:0 51px;
+  padding:0 40px;
   display: grid;
   align-content: center;
-  min-height: 400px;
+  min-height: 310px;
   border-radius: 18px;
   width: 100%;
   margin-top: 0;
   margin-bottom: 25px;
+  position: relative;
 }
-.top-sec-div-one figure{
-  height: 300px;
+.top-sec-div-one:before{
+  min-height:310px;
+}
+.top-sec-div-one:before,
+.comon-ge1-div:before,
+.comon-pre-bn:before{
+  /* background: rgba(59, 70, 97, 40%);
+  backdrop-filter: blur(20px); */
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  /* mix-blend-mode: lighten; */
+
+
+
+  background: rgba(255, 255, 255, 10%);
+border-radius: 8px;
+opacity: 1;
+backdrop-filter: blur(30px);
+-webkit-backdrop-filter: blur(30px);
+}
+.comon-pre-bn:before{
+  height:90px;
+}
+.top-inside-div:before{
+  height: 90px;
+  /* background: rgba(59, 70, 97, 90%);
+  backdrop-filter: blur(20px); */
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  border-radius: 8px;
+  /* mix-blend-mode: lighten; */
+
+  
+  background: rgba(255, 255, 255, 10%);
+border-radius: 8px;
+opacity: 1;
+backdrop-filter: blur(30px);
+-webkit-backdrop-filter: blur(30px);
+}
+.comon-ge1-div::before{
+  min-height: 510px;
+}
+.top-sec-div-one figure {
+  height: 227px;
   display: inline-block;
-  width: 300px;
+  width: 227px;
   overflow: hidden;
-  border-radius: 18px;
+  border-radius: 8px;
   margin-bottom: 0;
 }
 .top-sec-div-one figure img{
@@ -481,11 +557,12 @@ footer p {
 }
 .comon-btn-socal{
   background: rgb(255, 255, 255, 30%);
-  padding:8px 20px !important;
+  padding:7px 18px !important;
   color: #fff !important;
   border-radius: 50px !important;
   font-weight: 700;
-  font-size: 16px !important;
+  font-size: 14px !important;
+  font-family: 'AvenirBlack';
 }
 .comon-btn-socal svg{
   width:25px;
@@ -495,31 +572,31 @@ footer p {
 .top-sec-div-one h2{
   color: #EE4130;
   font-family: 'PuntaExtrabold';
-  font-size:64px; 
+  font-size:42px; 
   margin: 0;
   text-shadow: 0px 3px 6px #00000029;
   letter-spacing: 0px;
 }
 .top-sec-div-one p{
-  font-size: 24px;
+  font-size: 18px;
   margin-top: 15px;
   font-family: 'FuturaMedium';
   text-shadow: 0px 3px 6px #00000029;
   letter-spacing: 0px;
-  line-height: 30px;
+  line-height: 24px;
+  margin-bottom: 30px;
 }
 .comon-ge1-div{
-  background: url(../public/images/bg-rigth-home.jpg) no-repeat;
-  background-size: cover;
   display:grid;
   align-content: center;
-  padding:0 44px;
+  padding:0 40px;
   border-radius: 8px;
   width: 100%;
   margin-bottom:25px;
-  min-height: 560px;
+  min-height: 510px;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
 }
 
 .ft-new h3,
@@ -538,34 +615,33 @@ footer p {
 .comon-ge1-div h2{
   color: #F33E31;
   font-family: 'FuturaBold';
-  font-size: 52px; 
+  font-size: 42px; 
   text-shadow: 0px 3px 6px #00000029;
 }
 .comon-ge1-div h1{
   color: #fff;
   font-family: 'FuturaBold';
-    font-size: 120px;
+    font-size: 87px;
     margin: 0;
     text-shadow: 0px 3px 6px #00000029;
 }
 .crytaria-div h2{
-  font-size: 42px;
+  font-size: 38px;
   text-shadow: 0px 3px 6px #00000029;
 }
 .comon-ge1-div .row > div:last-child h1{
-  font-size: 89px;
+  font-size: 59px;
 }
 .comon-ge1-div h5{
   margin: 0;
   font-family: 'FuturaMedium';
-  font-size: 26px;
+  font-size: 20px;
   line-height: 30px;
 }
 .crytaria-div li {
-  margin-bottom: 6px;
-  font-size: 22px;
+  margin-bottom: 0px;
+  font-size: 18px;
   font-family: 'FuturaMedium';
-  line-height: 28px;
 }
 
 .crytaria-div li b{
@@ -573,9 +649,8 @@ footer p {
 }
 .crytaria-div li .btn{
   margin-bottom: 6px;
-  font-size: 22px;
+  font-size: 17px;
   font-family: 'FuturaMedium';
-  line-height: 28px;
   color: #fff;
   padding: 0 !important;
   text-align: left;
@@ -588,17 +663,17 @@ footer p {
   margin-bottom: 25px;
 }
 .comon-pre-bn{
-  background: url(../public/images/bg-rigth-home.jpg) no-repeat;
-  background-size: cover;
   display: grid;
   padding: 20px;
   border-radius: 8px;
   width: 100%;
-  height: 100px;
+  height: 90px;
   align-content: center;
+  position: relative;
 }
 .comon-sc-f .comon-btn-ree{
-  width: 45%;
+  width: 55%;
+  display: inline-block;
 }
 .comon-sc-f svg{
     width: 30px;
@@ -659,9 +734,9 @@ footer p {
   width: 10px;
   height: 10px;
 }
-.sc-mn-icon svg{
-    width: 40px;
-    height: 40px;
+.sc-mn-icon svg {
+  width: 54px;
+  height: 45px;
 }
 .iconm1 svg{
   width: 40px;
@@ -687,9 +762,21 @@ footer p {
   display: block;
 }
 .first-cum-st1 h1{
-  font-size: 47px !important;
+  font-size: 37px !important;
 }
-
+.first-cum-st1 p{
+  font-family: 'FuturaMedium';
+  font-size: 16px;
+}
+.close-text p{
+  font-family: 'FuturaMedium';
+  font-size: 19px;
+  position: absolute;
+  bottom: 30px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
 .check-or-uncheck{
   display: none;
   margin-right: 8px;
@@ -728,7 +815,7 @@ footer p {
   height: 31px;
 }
 .register-btn2{
-  width: 16% !important;
+  width: 19% !important;
 }
 .registe-btn-div{
   display: none;
@@ -742,7 +829,7 @@ footer p {
 .register-btn2.disabled, .register-btn2:disabled, 
 fieldset:disabled .register-btn2{
   background: rgb(255,255,255);
-  background: linear-gradient(115deg, rgba(255,255,255,1) 0%, rgba(112,112,112,1) 100%);
+  background:linear-gradient(115deg, rgba(255,255,255,1) 0%, rgb(74 74 74) 100%);
   opacity: 9 !important;
 }
 .close1{
@@ -786,7 +873,33 @@ fieldset:disabled .register-btn2{
 }
 
 .show-main-up-allowlist{
-  padding-top: 133px;
+  padding-top: 113px;
+}
+.retex{
+  text-shadow: 0px 3px 6px #00000029;
+  font-family: 'FuturaMedium';
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.retex  svg{
+  margin-left: 5px;
+}
+
+
+@media screen and (min-width:1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl{
+    max-width: 920px;
+  }
+ 
+}
+@media screen and (max-width:1200px) {
+  body{
+    background-size: cover;
+    background-position: center top;
+  }
 }
 @media screen and (max-width:1180px) {
   .top-sec-div-one figure {
@@ -809,6 +922,9 @@ fieldset:disabled .register-btn2{
   }
   .register-btn2 {
     width: 26% !important;
+}
+.top-sec-div-one:before, .comon-ge1-div:before, .comon-pre-bn:before {
+  background: rgba(59, 70, 97,60%);
 }
 }
 @media screen and (max-width: 900px) {
@@ -863,6 +979,19 @@ fieldset:disabled .register-btn2{
   .comon-ge1-div,
   .top-sec-div-one{
     padding: 30px;
+  }
+
+  .top-sec-div-one:before, .comon-ge1-div:before, .comon-pre-bn:before {
+    background: rgba(59, 70, 97, 93%);
+  }
+
+  .comon-ge1-div,
+  .comon-ge1-div::before{
+    min-height: 810px;
+  }
+  .top-sec-div-one,
+  .top-sec-div-one::before{
+    height: 550px;
   }
 
 }
@@ -944,6 +1073,26 @@ fieldset:disabled .register-btn2{
   .show-main-up-allowlist {
     padding-top: 85px; 
   }
+  body{
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .top-sec-div-one:before, .comon-ge1-div:before, .comon-pre-bn:before {
+    background: rgba(59, 70, 97, 93%);
+  }
+  .top-inside-div,
+  .top-inside-div::before{
+    height: 67px;
+  }
+  .comon-ge1-div,
+  .comon-ge1-div::before{
+    min-height: 610px;
+  }
+  .top-sec-div-one,
+  .top-sec-div-one::before{
+    height: 355px;
+  }
 }
 @media screen and (max-width:420px) {
 .comon-btn-ree {
@@ -954,16 +1103,46 @@ fieldset:disabled .register-btn2{
   width: 90%;
   font-size: 12px !important;
 }
+
+.top-inside-div a > img {
+  vertical-align: middle;
+  width: 100%;
+}
+body{
+  background-size: cover;
+  background-position: center top;
+}
+.top-inside-div{
+  padding: 0 20px;
+}
+.show-main-up-allowlist {
+  padding-top: 85px; 
+}
+.top-sec-div-one:before, .comon-ge1-div:before, .comon-pre-bn:before {
+  background: rgba(59, 70, 97, 93%);
+}
+.comon-ge1-div,
+.comon-ge1-div::before {
+  min-height: 590px;
+}
+.top-sec-div-one,
+.top-sec-div-one::before{
+  height: 350px;
+}
+.top-inside-div,
+.top-inside-div::before{
+  height: 67px;
+}
 }
 
 @media screen and (max-width: 375px) {
   .comon-btn-ree{
     width: 100%;
-    font-size: 12px !important;
+    font-size: 11px !important;
   }
   .active-id-btn{
     width: 100%;
-    font-size: 12px !important;
+    font-size: 11px !important;
   }
   .top-inside-div{
     height: 67px;
@@ -985,7 +1164,9 @@ fieldset:disabled .register-btn2{
     padding: 8px 19px !important;
     font-size: 12px !important;
   }
-
+  .top-inside-div:before{
+    height: 67px;
+  }
 
   .comon-ge1-div h2{
     font-size: 25px;
@@ -1006,12 +1187,39 @@ fieldset:disabled .register-btn2{
   .show-main-up-allowlist {
     padding-top: 85px; 
   }
+  .top-sec-div-one:before, .comon-ge1-div:before, .comon-pre-bn:before {
+    background: rgba(59, 70, 97, 93%);
+  }
+  .comon-ge1-div::before {
+    min-height: 620px;
+  }
+  .comon-ge1-div{
+    min-height: 620px;
+  }
+
+  .top-sec-div-one,
+  .top-sec-div-one:before{
+    height: 350px;
+  }
+  .top-inside-div a > img {
+    vertical-align: middle;
+    width: 100%;
+  }
+  body{
+    background-size: cover;
+    background-position: center top;
+  }
+  .top-inside-div{
+    padding: 0 20px;
+  }
 
 }
 .top-inside-div a > img{
   vertical-align: middle;
+  width: 84%;
 }
 .navbar-fixed-top {
   position: fixed;
   top: 0;
+  z-index: 3;
 }

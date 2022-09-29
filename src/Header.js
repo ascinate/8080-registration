@@ -34,7 +34,7 @@ function Header(){
                          </div>
                          <div className="col d-flex justify-content-end">
                             <button type="button" className="btn comon-btn-ree funt-btn" onClick={addclass}>
-                                  Connect Wallet <BsArrowRight/>
+                                  Connect Wallet <span className="btn-arowwn"> <img src="images/arrow.png" alt="bn"/> </span>
                              </button>
                             
                              <button type="button" className="btn active-id-btn">

@@ -30,7 +30,7 @@ function ComonSocaial(){
     return(
         <>
         <div className="inside-cosl mt-4">
-            <div className="row row-cols-1 row-cols-lg-2">
+            <div className="row row-cols-1 row-cols-lg-2 gy-4 gy-lg-0">
               <div className="col">
                 
                     <div className="comon-pre-bn" ref={navRefnext}>

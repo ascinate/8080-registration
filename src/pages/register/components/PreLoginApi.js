@@ -17,6 +17,8 @@ const Alldatapre =[
       registerbtn:"",
       tagevent:"Registered for roffle on 22nd on July, 2022. Awaiting result.",
       colsetext:<EventValue/>,
+      registerstatus:""
+     
       
     },
 
@@ -34,6 +36,7 @@ const Alldatapre =[
         registerbtn:<ButtonRegister/>,
         tagevent:"",
         colsetext:"",
+        registerstatus:"Registered for roffle on 22nd on July, 2022. Awaiting result.",
         
         
     },
