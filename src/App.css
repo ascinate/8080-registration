@@ -884,10 +884,10 @@ fieldset:disabled .register-btn2{
 .register-show > a:last-child .vari{
   display: none;
 }
-.own-div-show > a:last-child .close1{
+.own-div-show-arrow > a:last-child .close1{
   display: none !important;
 }
-.own-div-show > a:last-child .vari{
+.own-div-show-arrow > a:last-child .vari{
   display: inline-block !important;
 }
 .Toastify__toast-container{

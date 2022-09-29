@@ -38,7 +38,7 @@ function PreLogin(){
     const handleToggleRegister = () => {
         setActiveDiv(!isActivediv);
         setDisabled(!disabled);
-        
+        document.querySelector("#gen-div").classList.add('own-div-show-arrow');
         
     };
 
