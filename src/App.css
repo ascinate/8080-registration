@@ -669,6 +669,8 @@ backdrop-filter: blur(30px);
 }
 .first-cum-st1 h1{
   letter-spacing:-0.14px !important;
+  position: relative;
+  top: -18px;
 }
 .register-btn2 .btn-arowwn img{
   position: relative;
@@ -857,6 +859,8 @@ backdrop-filter: blur(30px);
 .first-cum-st1 p{
   font-family: 'FuturaMedium';
   font-size: 16px;
+  position: absolute;
+  bottom: -42px;
 }
 .close-text p{
   font-family: 'futuramediumitalic';
@@ -866,6 +870,10 @@ backdrop-filter: blur(30px);
   margin: auto;
   left: 0;
   right: 0;
+}
+.rafel-text h1{
+  position: relative;
+  top: -18px;
 }
 .check-or-uncheck{
   display: none;
