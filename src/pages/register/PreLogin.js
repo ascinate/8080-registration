@@ -102,7 +102,7 @@ function PreLogin(){
                                
                                 <a className="comon-ge1-div" >
                                      <h2 className="mt-0"> {titel} </h2>
-                                        <div className="col-lg-11 mx-auto mb-5">
+                                        <div className="col-lg-11 sp-div-margin mb-5">
                                             <div className="row main-row row-cols-1 row-cols-lg-3 g-lg-4 align-items-end">
                                                 <div className="col text-center">
                                                     <h1> {register} </h1>
