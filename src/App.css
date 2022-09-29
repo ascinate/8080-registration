@@ -65,6 +65,16 @@
        url('./fonts/AvenirBlack.svg#AvenirBlack') format('svg');
 }
 
+@font-face {
+  font-family: 'futuramediumitalic';
+  src: url('./fonts/futuramediumitalic.eot');
+  src: url('./fonts/futuramediumitalic.eot') format('embedded-opentype'),
+       url('./fonts/futuramediumitalic.woff2') format('woff2'),
+       url('./fonts/futuramediumitalic.woff') format('woff'),
+       url('./fonts/futuramediumitalic.ttf') format('truetype'),
+       url('./fonts/futuramediumitalic.svg#futuramediumitalic') format('svg');
+}
+
 
 
 a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, ul, var {
@@ -716,13 +726,28 @@ backdrop-filter: blur(30px);
 }
 .show-connntect-cord1 .discord-div2{
   display: block;
+  font-family: 'AvenirBlack';
+  font-weight: 700;
 }
 .show-connntect-cord1 .discord-div{
   display: none;
+  font-family: 'AvenirBlack';
 }
- 
+.show-connntect-cord1 .discord-div span,
+.show-connntect-cord1 .discord-div2 span{
+  font-family: 'AvenirBlack';
+  font-weight: 700;
+}
+.twi-div span{
+  font-family: 'AvenirBlack';
+  font-weight: 700;
+}
+.comon-pre-bn  a{
+  text-decoration: none;
+}
 .show-connntect-twit1 .twi-div{
   display: block;
+  font-weight: 700;
 }
 .show-connntect-twit1 .twitw-div1{
   display: none;
@@ -756,8 +781,8 @@ backdrop-filter: blur(30px);
   height: 45px;
 }
 .iconm1 svg{
-  width: 40px;
-  height: 40px;
+  width: 54px;
+  height: 45px;
 }
 
 .new-show-socal-div .gen-list-div > a:first-child .main-row > div:last-child .rafel-text{
@@ -786,7 +811,7 @@ backdrop-filter: blur(30px);
   font-size: 16px;
 }
 .close-text p{
-  font-family: 'FuturaMedium';
+  font-family: 'futuramediumitalic';
   font-size: 19px;
   position: absolute;
   bottom: 30px;
@@ -897,7 +922,7 @@ fieldset:disabled .register-btn2{
 }
 .retex{
   text-shadow: 0px 3px 6px #00000029;
-  font-family: 'FuturaMedium';
+  font-family: 'futuramediumitalic';
   font-size: 18px;
   line-height: 30px;
   display: flex;

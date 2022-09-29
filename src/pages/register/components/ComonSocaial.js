@@ -1,6 +1,7 @@
 import React from "react";
 import { BsArrowRight, BsXLg ,BsX } from "react-icons/bs";
 import { FaTwitter, FaGlobe, FaDiscord } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 function ComonSocaial(){
     const navRefnext = React.useRef(null);
@@ -45,7 +46,7 @@ function ComonSocaial(){
 
                         <div className="discord-div2 text-center comon-sc-v">
                             <span className="iconm1">  <FaDiscord/> </span>
-                            <span> <b> User#1234 </b> Connected </span> 
+                            <NavLink to="/"> <b> User#1234 </b> Connected </NavLink>
                             <button type="button" className="clos btn" onClick={onShowC2}> <BsX/> </button>
                         </div>
                     </div>
@@ -64,7 +65,7 @@ function ComonSocaial(){
 
                     <div className="twi-div text-center comon-sc-v">
                         <span className="iconm1">  <FaTwitter/> </span>
-                        <span> <b>  @username </b> Connected </span> 
+                        <NavLink to="/"> <b>  @username </b> Connected </NavLink> 
                         <button type="button" className="clos btn" onClick={onShowT2}> <BsX/> </button>
                     </div>
                 </div>
