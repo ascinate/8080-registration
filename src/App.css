@@ -829,6 +829,24 @@ backdrop-filter: blur(30px);
 }
 .first-cum-st1{
   display: none;
+  position: relative;
+}
+.first-cum-st1 p{
+  position:relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.rafel-text{
+  position: relative;
+}
+.rafel-text h5{
+  position:absolute;
+  bottom: -38px;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 .new-show-socal-div .first-cum-st1{
   display: block;
