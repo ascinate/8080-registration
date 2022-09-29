@@ -38,7 +38,7 @@ function PreLogin(){
     const handleToggleRegister = () => {
         setActiveDiv(!isActivediv);
         setDisabled(!disabled);
-        document.querySelector("#gen-div").classList.add('own-div-show');
+        
         
     };
 
@@ -48,6 +48,7 @@ function PreLogin(){
 
     const notify = () => {toast("Register Successfully");
        setShowResults(true);
+       document.querySelector("#gen-div").classList.add('own-div-show');
      }
 
     const [showResults, setShowResults] = useState(false)
