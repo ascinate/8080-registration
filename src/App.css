@@ -1213,6 +1213,12 @@ fieldset:disabled .register-btn2{
   .comon-ge1-div h1{
     font-size: 56px;
   }
+  .rafel-text h1 {
+    font-size: 38px!important;
+}
+.rafel-text h5{
+  bottom: -31px;
+}
   .comon-ge1-div h5 {
     font-size: 18px;
     line-height: 22px;
@@ -1409,7 +1415,9 @@ body{
   font-size: 32px!important;
 }
 
-
+.comon-ge1-div .comon-btn-ree {
+  width: 44%;
+}
 }
 
 @media screen and (max-width: 375px) {
