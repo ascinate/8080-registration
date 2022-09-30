@@ -1297,7 +1297,7 @@ fieldset:disabled .register-btn2{
   font-size: 21px !important;
 }
 }
-@media screen and (max-width:420px) {
+@media screen and (max-width:428px) {
   .comon-btn-ree {
     width: 93%;
     font-size: 12px !important;
@@ -1591,6 +1591,9 @@ body{
 .active-id-btn {
   width: 90%;
   font-size: 11px !important;
+}
+.first-cum-st1 h1 {
+  font-size: 13px !important;
 }
 }
 .top-inside-div a > img{
