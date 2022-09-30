@@ -1679,7 +1679,7 @@ body{
 }
 .comon-ge1-div,
 .comon-ge1-div::before{
-  min-height: 384px;
+  min-height: 364px;
 }
 .crytaria-div li, .crytaria-div li .btn {
   font-size: 13px;
