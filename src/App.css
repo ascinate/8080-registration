@@ -1041,6 +1041,12 @@ fieldset:disabled .register-btn2{
     margin-top: 10px;
   }
 
+  .cty-div {
+    margin-top: 26px;
+}
+.first-cum-st1 h1 {
+  font-size: 29px !important;
+}
   .body-home1 .row > div.position-relative:first-child{
     border-right: none;
   }
@@ -1267,7 +1273,7 @@ fieldset:disabled .register-btn2{
   }
   .top-sec-div-one, 
   .top-sec-div-one::before {
-    height: 613px;
+    height: 636px;
   }
 
   .register-btn2 {
