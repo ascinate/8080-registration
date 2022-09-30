@@ -1652,7 +1652,7 @@ body{
 
 @media screen and (max-width: 320px) {
   .comon-btn-ree{
-    font-size: 8px !important;
+    font-size:9px !important;
     line-height: 19px;
   }
   .comon-btn-socal {
@@ -1666,6 +1666,59 @@ body{
     width: 100%;
     height: 260px;
 }
+.btn-arowwn img {
+  width: 15px;
+  vertical-align: middle;
+  margin-left: 5px;
+  position: relative;
+  top: -1px;
+}
+.comon-ge1-div h5 {
+  font-size: 12px;
+  line-height: 14px;
+}
+.comon-ge1-div,
+.comon-ge1-div::before{
+  min-height: 350px;
+}
+.active-id-btn {
+  width: 109%;
+  font-size: 10px !important;
+  line-height: 17px;
+
+}
+.first-cum-st1 h1 {
+  font-size: 11px !important;
+}
+.first-cum-st1 p{
+  bottom: -26px;
+  line-height: 12px;
+}
+.comon-pre-bn a {
+  text-decoration: none;
+  font-size: 11px;
+}
+.top-sec-div-one p{
+  font-size: 12px;
+}
+.iconm1 svg {
+  width: 30px;
+  height: 25px;
+}
+.comon-btn-socal svg {
+  width: 14px;
+  height: 14px;
+  margin-right: 3px;
+}
+.icon-n3{
+  width: 10px;
+  height: 10px;
+}
+.icon-n3 svg{
+  width: 7px;
+  height: 7px;
+}
+
 }
 .top-inside-div a > img{
   vertical-align: middle;
