@@ -103,8 +103,8 @@ function PreLogin(){
                                
                                 <a className="comon-ge1-div" >
                                      <h2 className="mt-0"> {titel} </h2>
-                                        <div className="col-lg-11 sp-div-margin mb-5">
-                                            <div className="row main-row row-cols-1 row-cols-lg-3 g-lg-4 align-items-center">
+                                        <div className="col-lg-11 sp-div-margin mb-3 mb-lg-5">
+                                            <div className="row main-row row-cols-3 row-cols-lg-3 g-lg-4 align-items-center">
                                                 <div className="col text-center">
                                                     <h1> {register} </h1>
                                                     <h5> Registrations</h5>
@@ -129,12 +129,12 @@ function PreLogin(){
                                                 </div>
                                             </div>
 
-                                            <div className="cty-div col-lg-11 mx-auto mt-5">
+                                            <div className="cty-div col-lg-11 mx-auto mb-3 mt-lg-5">
                                                     <div className="crytaria-div">
                                                         <div className="row row-cols-1 row-cols-lg-2 align-items-center">
                                                             <div className="col">
-                                                                <h2 className="m-0 text-white ms-lg-4">Qualification <br/> 
-                                                                Criteria </h2> 
+                                                                <h2 className="m-0 text-white ms-lg-4">Qualification <span className="d-inline d-lg-block"> 
+                                                                Criteria </span> </h2> 
                                                             </div>
                                                             <div className="col">
                                                                 <ul className="list-unstyled m-0">
@@ -178,7 +178,7 @@ function PreLogin(){
                                         </div>
                                         { showResults ? <p className="text-center retex m-0"> Registered for raffle on 22nd of July, 2022. Awaiting result. <FaUndo/> </p> : null }
                                         <ToastContainer />
-                                        <div className="d-flex justify-content-lg-end align-items-center">
+                                        <div className="d-flex justify-content-end align-items-center">
                                                 <button type="button" className="btn comon-btn-ree funt-btn"  onClick={onCkickHandel}>
                                                     Connect Wallet <span className="btn-arowwn"> <img src="images/arrow.png" alt="bn"/> </span>
                                                 </button>
