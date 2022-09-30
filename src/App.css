@@ -1646,6 +1646,26 @@ body{
 .first-cum-st1 h1 {
   font-size: 13px !important;
 }
+
+
+}
+
+@media screen and (max-width: 320px) {
+  .comon-btn-ree{
+    font-size: 8px !important;
+    line-height: 19px;
+  }
+  .comon-btn-socal {
+    padding: 8px 10px !important;
+    font-size: 9px !important;
+  }
+  .rafel-text h1 {
+    font-size: 23px !important;
+  }
+  .top-sec-div-one figure {
+    width: 100%;
+    height: 260px;
+}
 }
 .top-inside-div a > img{
   vertical-align: middle;
