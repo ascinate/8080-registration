@@ -1297,6 +1297,54 @@ fieldset:disabled .register-btn2{
   font-size: 21px !important;
 }
 }
+@media screen and (max-width:739px) {
+
+  .comon-btn-ree {
+    width: 84%;
+    font-size: 16px !important;
+  }
+
+  .comon-btn-socal {
+    font-size: 18px !important;
+  }
+  .top-sec-div-one p {
+    font-size: 20px;
+    margin-top: 15px;
+    letter-spacing: 0px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  .top-sec-div-one, .top-sec-div-one::before {
+    height: 734px;
+  }
+  .rafel-text h1 {
+    font-size: 43px !important;
+  }
+  .comon-ge1-div .comon-btn-ree {
+    width: 43%;
+    font-size: 19px;
+  }
+  .crytaria-div h2,
+  .crytaria-div h2 span{
+    font-size: 31px;
+  }
+  .comon-ge1-div, .comon-ge1-div::before {
+    min-height: 492px;
+  }
+  .first-cum-st1 h1 {
+    font-size: 20px !important;
+  }
+  .first-cum-st1 p {
+    font-family: 'FuturaMedium';
+    font-size: 14px;
+    position: absolute;
+    bottom: -39px;
+  }
+  .active-id-btn {
+    width: 80%;
+    font-size: 16px !important;
+  }
+}
 @media screen and (max-width:428px) {
   .comon-btn-ree {
     width: 93%;
