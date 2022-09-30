@@ -1344,6 +1344,9 @@ fieldset:disabled .register-btn2{
     width: 80%;
     font-size: 16px !important;
   }
+  .register-btn2 {
+    width: 36%!important;
+  }
 }
 @media screen and (max-width:428px) {
   .comon-btn-ree {
