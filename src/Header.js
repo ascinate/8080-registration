@@ -1,6 +1,8 @@
 import React, {useRef, useState, useEffect} from "react";
 import { NavLink } from "react-router-dom";
 import { BsArrowRight, BsFillCircleFill  } from "react-icons/bs";
+import Logo from "../src/images/logo.png";
+import Arrow from "../src/images/arrow.png";
 
 function Header(){
 
@@ -29,12 +31,12 @@ function Header(){
                      <div className="row row-cols-2 row-cols-lg-2 align-items-center">
                          <div className="col">
                             <NavLink to="/">
-                                <img src="images/logo.png" alt="logo"/>
+                                <img src={Logo} alt="logo"/>
                             </NavLink>
                          </div>
                          <div className="col d-flex justify-content-end">
                             <button type="button" className="btn comon-btn-ree funt-btn" onClick={addclass}>
-                                  Connect Wallet <span className="btn-arowwn"> <img src="images/arrow.png" alt="bn"/> </span>
+                                  Connect Wallet <span className="btn-arowwn"> <img src={Arrow} alt="bn"/> </span>
                              </button>
                             
                              <button type="button" className="btn active-id-btn">

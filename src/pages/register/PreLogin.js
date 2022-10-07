@@ -8,6 +8,7 @@ import Header from "../../Header";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import EventValue from "./components/EventValue";
+import Arrow from "../../images/arrow.png";
 
 
 
@@ -180,7 +181,7 @@ function PreLogin(){
                                         <ToastContainer />
                                         <div className="d-flex justify-content-end align-items-center">
                                                 <button type="button" className="btn comon-btn-ree funt-btn"  onClick={onCkickHandel}>
-                                                    Connect Wallet <span className="btn-arowwn"> <img src="images/arrow.png" alt="bn"/> </span>
+                                                    Connect Wallet <span className="btn-arowwn"> <img src={Arrow} alt="bn"/> </span>
                                                 </button>
 
                                             { !showResults ?
