@@ -99,6 +99,9 @@
   --abutton-color: linear-gradient(176deg,#ffa908,#7b0480);
   --bbutton-color: linear-gradient(146deg, rgba(42,242,255,1) 30%, rgba(255,2,0,1) 71%);
   --body-background:url(../public/images/bg-section.jpg);
+  --font-head:#ee4130;
+  --font-body:#fff !important;
+  --counnect-link:#6D82CB !important;
 }
 
 a, abbr, acronym, address, applet, big, blockquote, body, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, tt, ul, var {
@@ -123,7 +126,7 @@ background-position: center bottom;
 width: 100%;
 font-family: 'Source Sans Pro', sans-serif;
 font-size:17px;
-color:#fff;
+color:var(--font-body);
 }
 
 
@@ -175,11 +178,10 @@ img {
   width: 100%;
 }
 .comon-btn{
-  background: #ffa908;
   background-color: var(--abutton-color);
     border: none!important;
     border-radius: 50px!important;
-    color: #fff!important;
+    color:var(--font-body);
     margin-top: 18px;
     padding: 8px 20px;
     font-size: 20px !important;
@@ -262,7 +264,7 @@ img {
   background: #fff!important;
   border-radius: 50px!important;
   color: #000!important;
-  font-family: futuramediumbt;
+  font-family: "futuramediumbt";
   padding: 5px 16px!important;
   display: flex;
   align-items: center;
@@ -351,13 +353,14 @@ img {
    overflow: hidden;
    display: grid;
    border: none;
-   color: #fff !important;
+   color:var(--font-body);
    width: 45px;
    height: 45px;
    align-content: center;
    font-weight: bold;
    font-size: 18px;
 }
+
 .counting-ps-suppy{
   display: grid;
   align-content: center;
@@ -372,14 +375,14 @@ img {
   margin-top: 30px;
 }
 .counting-ps-suppy h1{
-  color: #fff !important;
+  color:var(--font-body);
 }
 .mint-btn{
   background: rgb(42,242,255);
   background: linear-gradient(115deg, rgba(42,242,255,1) 0%, rgba(255,2,0,1) 100%);
 border: none !important;
 border-radius: 20px !important;
-color: #fff !important;
+color:var(--font-body);
 font-family: 'FuturaBoldfont';
 font-size: 20px !important;
 width: 60%;
@@ -422,7 +425,7 @@ margin: auto;
 }
 .goto-btn{
   background: #FF0200 !important;
-  color: #fff !important;
+  color:var(--font-body);
   border-radius: 30px !important;
   display: flex;
   justify-content: space-between;
@@ -461,7 +464,7 @@ footer p {
   /* background: rgb(42,242,255);
   background: linear-gradient(115deg, rgba(42,242,255,1) 0%, rgba(255,2,0,1) 100%); */
   border-radius: 28px !important;
-  color: #fff !important;
+  color:var(--font-body);
   font-family: 'AvenirBlack';
   font-size: 16px !important;
   width: 48%;
@@ -473,13 +476,18 @@ footer p {
   background: var(--bbutton-color);
   line-height: 27px;
   border: none !important;
+  transition: all 0.5s;
+}
+.comon-btn-ree:hover,
+.active-id-btn:hover{
+  color:var(--font-body);
 }
 .active-id-btn{
   border: solid 3px #fff;
   border-radius: 40px !important;
   font-family: 'AvenirBlack';
   font-size: 16px !important;
-  color: #fff !important;
+  color:var(--font-body);
   display: none;
   padding: 3px 13px;
 
@@ -571,11 +579,15 @@ backdrop-filter: blur(30px);
 .comon-btn-socal{
   background: rgb(255, 255, 255, 30%);
   padding:7px 18px !important;
-  color: #fff !important;
+  color:var(--font-body);
   border-radius: 50px !important;
   font-weight: 700;
   font-size: 14px !important;
   font-family: 'AvenirBlack';
+  transition: all 0.5s;
+}
+.comon-btn-socal:hover{
+  color:var(--font-body);
 }
 .comon-btn-socal svg{
   width:25px;
@@ -583,7 +595,7 @@ backdrop-filter: blur(30px);
   margin-right: 7px;
 }
 .top-sec-div-one h2{
-  color: #EE4130;
+  color: var(--font-head);
   font-family: 'PuntaExtrabold';
   font-size:42px; 
   margin: 0;
@@ -626,13 +638,13 @@ backdrop-filter: blur(30px);
 
 
 .comon-ge1-div h2{
-  color: #F33E31;
+  color:var(--font-head);
   font-family: 'FuturaBold';
   font-size: 42px; 
   text-shadow: 0px 3px 6px #00000029;
 }
 .comon-ge1-div h1{
-  color: #fff;
+  color:var(--font-body);
   font-family: 'FuturaBold';
     font-size: 87px;
     margin: 0;
@@ -685,7 +697,7 @@ backdrop-filter: blur(30px);
   margin-bottom: 6px;
   font-size: 17px;
   font-family: 'FuturaMedium';
-  color: #fff;
+  color:var(--font-body);
   padding: 0 !important;
   text-align: left;
 }
@@ -713,13 +725,13 @@ backdrop-filter: blur(30px);
 .comon-sc-f svg{
     width: 30px;
     height: 30px;
-    color: #fff;
+    color:var(--font-body);
     margin-right: 10px;
 }
 .comon-sc-v .clos svg{
   width: 30px;
   height: 30px;
-  color: #fff !important;
+  color:var(--font-body);
 
 }
 .footer-lg{
@@ -729,7 +741,7 @@ backdrop-filter: blur(30px);
 
 }
 .comon-sc-v b{
-  color: #6D82CB;
+  color: var(--counnect-link);
 }
 .iconm1 svg{
   width: 25px;
@@ -870,11 +882,10 @@ backdrop-filter: blur(30px);
 }
 
 .register-btn{
-  background: rgb(42,242,255);
-  background: linear-gradient(115deg, rgba(42,242,255,1) 0%, rgba(255,2,0,1) 100%);
+  background: var(--abutton-color);
   border: none !important;
   border-radius: 20px !important;
-  color: #fff !important;
+  color:var(--font-body);
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 20px !important;
   font-weight: 700;
@@ -940,12 +951,12 @@ fieldset:disabled .register-btn2{
 
 .Toastify__toast-theme--light{
   background: #85a47d !important;
-  color: #fff !important;
+  color:var(--font-body);
   backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
 }
 .Toastify__close-button--light{
-  color: #fff !important;
+  color:var(--font-body);
   opacity: 9 !important;
 }
 .own-div-show > a{
@@ -955,9 +966,11 @@ fieldset:disabled .register-btn2{
   display: block !important;
 }
 .full-with .top-inside-div{
-   background:rgb(31 54 104 / 78%);
+   background:rgb(31 54 104 / 99%);
 }
-
+.full-with .top-inside-div:before{
+  backdrop-filter:inherit;
+}
 .show-main-up-allowlist{
   padding-top: 113px;
 }
