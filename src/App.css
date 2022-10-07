@@ -966,7 +966,7 @@ fieldset:disabled .register-btn2{
   display: block !important;
 }
 .full-with .top-inside-div{
-   background:rgb(31 54 104);
+   background:#1f3668c7;
 }
 .full-with .top-inside-div:before{
   backdrop-filter:inherit;
